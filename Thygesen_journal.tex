@@ -1,0 +1,192 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Digital Methods: Learning Journal}
+\author{Alexander Ulrich Thygesen}
+\date{Autumn 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Today's Date}
+\subsection{Thoughts / Intentions}
+\subsection{Action}
+\subsection{Results}
+\subsection{Final Thoughts}
+
+\pagebreak{}
+
+\section{29/10/2019}
+\subsection{Thoughts / Intentions}
+
+\text I´ll try to do the regex excercise 3 right now. I´m a bit confused about the Regular Expressions, but I will do my best. Overleaf is working fine though, I have been playing with it this afternoon and it is already easier to use. 
+
+
+
+
+\subsection{Action}
+
+\begin{itemize}
+\item  Imported the data from excel sheet to  regex101 
+
+\item Tried the regex [A-Za-z0-9]
+
+\item All got highlighted. Not usable 
+
+\item Tried \textbackslash s to identify the spaces,tabs or new lines in the dataset 
+
+\item Now we have something more usable. I´ll try to substitute with the spaces with " 
+
+\item That did not work 
+
+\item Trying with (space) 
+
+\item Now I have a big lump of text. Will substitute that with the orginal
+
+\item Used \textbackslash again and substituted with ",". IT WORKED. Or I think so. 
+
+
+
+
+
+\end{itemize}\subsection{Results}
+
+\text Link to the results on regex101: https://regex101.com/r/oTMmO6/1  
+It does miss a " in the start and in the end, but I am still proud of my results. 
+
+
+
+\subsection{Final Thoughts}
+
+\text Spent around 30 minutes on the first exercise and completed it with only minor errors. Feel confident about the road ahead.  
+
+
+\section{04/11/2019}
+\subsection{Thoughts / Intentions}
+
+\text Now moving on to regex exercise 4. Let´s see how it goes. 
+
+
+\subsection{Action}
+
+\begin{itemize}
+    \item Getting the data from the bit.ly link 
+    \item Copy and paste the text into regex101
+    \item Tried (") and removed all " from the text
+    \item Removed all (,) from text
+    \item Now I am stuck. Can´t figure out how to move the words to a new line 
+    \item Trying to find answers on Google
+    \item Found my answer
+    \item Used \textbackslash s to capture all white spaces and substituted it with \textbackslash n, that makes a new line 
+\end{itemize}
+
+\subsection{Results}
+
+\textb Link to the results https://regex101.com/r/5pUhlL/1
+
+\subsection{Final Thoughts}
+\text I am not sure if I am doing this correctly. Would love to find a way to do it all in one line. Do not know if this is possible, but I will try to ask about it today in class. 
+
+
+\section{12/11-2019}
+\subsection{Thoughts / Intentions}
+\text To to catch up with the course after my absence last week. First I´ll try the "OpenRefine for Social Sciences" lesson. 
+
+\subsection{Action}
+\begin{itemize}
+    \item Openrefine already downloaded, so I only had to download the data and it´s now on my desktop
+    \item Started working on facets 
+    \item Solved the first exercise. Most interviews were done in november
+    \item Now moving on to the clustering 
+    \item Successfully clustering the names of the villages 
+    \item Now trying to use GREL on item owned column
+    \item Solved exercise successfully with 
+          value.replace("'", "")
+          value.replace("]", "")
+          value.replace(" ", "")
+    \item Starting to feel the potential of Openrefine 
+    \item Now moving on to months lack food column and repeating the steps 
+    \item Accidentally deleted all my progress by changing window. 
+    \end{itemize}
+
+\subsection{Results}
+\text Worked with Openrefine an hour or so, before I lost my progress. Learned some valuable tools that I can use for the exam. 
+
+\subsection{Final Thoughts}
+\text I am definitely going to use OR for my exam, if I get my hands on a messy dataset.
+
+\section{18/11-2019}
+\subsection{Thoughts / Intentions}
+\text Today I will try to go through the "Unix shell" lesson to get a better understanding of the terminal on my Mac 
+
+\subsection{Action}
+\begin{itemize}
+    \item Starting to read the introduction 
+    \item Reading a bit more. It repeats what we learned in class. Nice to get a refresh 
+    \item Finally learned how to quit the manual page with the command "Q" 
+    \item It wants me to put -F after the ls command, but it does not change anything in the result. Weird. 
+    \item Skipping some parts, that I don´t think are relevant/we already did in class
+    \item Going through the different pages 
+    \item Trying to observe all the different commands 
+    \item It is hard to understand 
+    \item Getting stuck in the part about pipes 
+    \item Would love to know how all this relates to R. Maybe it will make sense tomorrow in class, when we get introduced to that program. 
+    \item Better to stop now and see the connection with R tomorrow
+    \end{itemize}
+
+\subsection{Results}
+\text Bash is really hard to get and I need to see it in relation with some other programs to see its full potential. Learned some new commands, so i am not starting at zero tomorrow.  
+
+\subsection{Final Thoughts}
+\text I found my dataset today. Excited to see how I am going to use bash with that. 
+
+
+
+\section{22/11-2019}
+\subsection{Thoughts / Intentions}
+\text Going through the lesson "Starting with data" in datacarpentry. Working with R for the first time. 
+
+\subsection{Action}
+\begin{itemize}
+    \item Found the SAFI clean dataset and downloaded it
+    \item Installed the "Tidyverse" package without any problems. Ran the libray(tidyverse) command to make sure it was installed correctly. Now I am ready to start
+    \item Just following the instructions on datacapentry.org 
+    \item Doing the first exercise 
+    \item Having trouble with 2. Do not understand how nrow functions in that context. Will ask monday 
+    \item Consulting the solution to get a better understanding 
+    \item Number 4 I really do not get. Skipping that 
+    \item Moving on to the "Factors" part 
+    \item Noticed that the dataset still has NULL instead of NA. Will try to load dataset again
+    \item Its fixed now. Was missing the "" around NULL. Ready to continue 
+    \item I still do not know why there is a c in this code levels(memb_assoc) <- c("No", "Undetermined", "Yes") Will ask monday
+    \item Finished up lesson 3
+    \end{itemize}
+
+\subsection{Results}
+\text Completed the lesson. Some of the exercises were skipped, because I got stuck. 
+
+\subsection{Final Thoughts}
+\text It so hard to remember all the new commands. But I can now better see how to use R to develop my proof of concept. I will need to consult the internet to find relevant commands for my project. Would love to be able to compare different factors in my spreadsheet about suicides in Santiago and use that to create a narrative. One thing that could be cool to research is the connection between where the victims lived and what the average income is in that area. 
+
+
+\section{23/11-2019}
+\subsection{Thoughts / Intentions}
+\text  
+
+\subsection{Action}
+\begin{itemize}
+    \item 
+    
+    \end{itemize}
+
+\subsection{Results}
+\text 
+
+\subsection{Final Thoughts}
+\text 
+
+
+
+
+\end{document}
